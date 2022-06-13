@@ -9,4 +9,4 @@
 Свой аналог Инстаграма, только с красивыми местами,и не с инфоцыганскими курсами. Стек технологий: React,HTML, CSS, JS.
 
 **Ссылка**
-Ссылка на сайт https://grishechkina.github.io/mesto/
+Ссылка на сайт https://grishechkina.github.io/mesto-react/
