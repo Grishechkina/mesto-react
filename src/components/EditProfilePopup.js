@@ -14,8 +14,9 @@ function EditProfilePopup(props) {
       setName(currentUser.name);
       setActivity(currentUser.about);
     }
-
-  }, [currentUser]);
+  // в зависимости стоит добавить пропс isOpen, чтобы устанавливать актуальные значения 
+  // в инпуты если пользователь изменил значения и не сохранил форму
+  }, [currentUser, props.isOpen]);
 
   function handleNameChange(e) {
     setName(e.target.value);
@@ -35,10 +36,6 @@ function EditProfilePopup(props) {
   }
 
   function onClose() {
-    if (currentUser.name && currentUser.about) {
-      setName(currentUser.name);
-      setActivity(currentUser.about);
-    }
     props.onClose()
   }
 
